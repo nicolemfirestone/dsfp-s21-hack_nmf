@@ -286,13 +286,15 @@ def main():
     you.mod_knowledge(5)
 
 
+    evenings =    {"early sleep": "early sleep",
+                "dinner/socializing": "dinner/socializing",
+                "go over content": "go over content"}
 
 
-
-
-
-
-
+    while (ev_key not in evenings.keys()):
+        ev_key = (input(f"Where do you plan to do this evening? {list(ev.keys())} "))
+        ev_key = loc_key.upper()
+    evening = evenings[ev_key.upper()]
 
 
 
